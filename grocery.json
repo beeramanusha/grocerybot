@@ -1,0 +1,828 @@
+{
+  "intents": [
+    {
+      "intent": "personalcare",
+      "examples": [
+        {
+          "text": "soap"
+        },
+        {
+          "text": "shavingcream"
+        },
+        {
+          "text": "shampoo"
+        },
+        {
+          "text": "handsoap"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "bakery",
+      "examples": [
+        {
+          "text": "bread"
+        },
+        {
+          "text": "biscuits"
+        },
+        {
+          "text": "dinner rolls"
+        },
+        {
+          "text": "sandwiches"
+        },
+        {
+          "text": "chocolates"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "welcome",
+      "examples": [
+        {
+          "text": "hi,hello,hellothere!"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "hellothere!"
+        },
+        {
+          "text": "hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "dairy",
+      "examples": [
+        {
+          "text": "ghee"
+        },
+        {
+          "text": "cheese"
+        },
+        {
+          "text": "butter"
+        },
+        {
+          "text": "milk"
+        },
+        {
+          "text": "eggs"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "payment",
+      "examples": [
+        {
+          "text": "can i get my bill"
+        },
+        {
+          "text": "payment"
+        },
+        {
+          "text": "can i get reciept"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "papergoods",
+      "examples": [
+        {
+          "text": "alluminiumfoils"
+        },
+        {
+          "text": "toiletpapers"
+        },
+        {
+          "text": "paperstowels"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "meat",
+      "examples": [
+        {
+          "text": "poultry"
+        },
+        {
+          "text": "fish"
+        },
+        {
+          "text": "meet"
+        },
+        {
+          "text": "beef"
+        },
+        {
+          "text": "prawns"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "cleaners",
+      "examples": [
+        {
+          "text": "detergents"
+        },
+        {
+          "text": "liquids"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "okay",
+      "examples": [
+        {
+          "text": "okay"
+        },
+        {
+          "text": "done"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "produce",
+      "examples": [
+        {
+          "text": "vegetables"
+        },
+        {
+          "text": "fruits"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "offers",
+      "examples": [
+        {
+          "text": "is there any offer?"
+        },
+        {
+          "text": "any offers??"
+        },
+        {
+          "text": "any buy one get one offers??"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "groceries",
+      "examples": [
+        {
+          "text": "cleaners"
+        },
+        {
+          "text": "paper goods"
+        },
+        {
+          "text": "meat"
+        },
+        {
+          "text": "dairy"
+        },
+        {
+          "text": "produce"
+        },
+        {
+          "text": "personal care"
+        },
+        {
+          "text": "bakery"
+        },
+        {
+          "text": "bread"
+        },
+        {
+          "text": "detergents"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "beverages"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "beverages",
+      "examples": [
+        {
+          "text": "coffee"
+        },
+        {
+          "text": "drinks"
+        },
+        {
+          "text": "tea"
+        },
+        {
+          "text": "jucies"
+        },
+        {
+          "text": "soda"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "bakery",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "bread",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "biscuits",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "chochalates",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sandwiches",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "dinner rolls",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "produce",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "vegetables",
+          "synonyms": [
+            "leafyvegatables,normalvegetables"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "fruits",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "personalcare",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "shampoo",
+          "synonyms": [
+            "chick,sunsilk,dove,cliniplus"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "shavingcream",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "handsoap",
+          "synonyms": [
+            "detol,libuoy"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "soap",
+          "synonyms": [
+            "mysoresandal,cinthol,lux,detol,libuoy,medimix,rexona,santhoor"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "dairy",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "cheese",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "butter",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "milk",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ghee",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "eggs",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "cleaners",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "liquids",
+          "synonyms": [
+            "harpic,detols,lizols"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "detergents",
+          "synonyms": [
+            "XXX,micro,Rin,wheel,diamond"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "anythingelse",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "no",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "yes",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "meat",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "poultry",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "beef",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "meet",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "fish",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "prawns",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "beverages",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "soda",
+          "synonyms": [
+            "bakingsoda,bakingpowder,"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "coffee/tea",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "drinks",
+          "synonyms": [
+            "thumbsup,pulp,sprite"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "juices",
+          "synonyms": [
+            "orange,lemon,mango,apple"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "papergoods",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "papertowels",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "aluminiumfoils",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "toiletpapers",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "personalcare",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "you can collect your items..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1590396788684",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1590401098530"
+      },
+      "conditions": "@personalcare:shampoo || @personalcare:shavingcream || @personalcare:handsoap || @personalcare:soap",
+      "dialog_node": "node_7_1590407342024",
+      "previous_sibling": "node_8_1590407141214"
+    },
+    {
+      "type": "standard",
+      "title": "cleaners",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "you can collect your items...."
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1590396788684",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1590401098530"
+      },
+      "conditions": "@cleaners:detergents || @cleaners:liquids",
+      "dialog_node": "node_9_1590397637260",
+      "previous_sibling": "node_3_1590397547858"
+    },
+    {
+      "type": "standard",
+      "title": "papergoods",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "you can collect your items......"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1590396788684",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_6_1590401098530"
+      },
+      "conditions": "@papergoods:papertowels || @papergoods:aluminiumfoils && @papergoods:toiletpapers",
+      "dialog_node": "node_7_1590407504617",
+      "previous_sibling": "node_7_1590407342024"
+    },
+    {
+      "type": "standard",
+      "title": "produce",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "you can collect your items..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1590396788684",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1590401098530"
+      },
+      "conditions": "@produce:fruits || @produce:vegetables",
+      "dialog_node": "node_8_1590407141214",
+      "previous_sibling": "node_8_1590406377735"
+    },
+    {
+      "type": "standard",
+      "title": "meat",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "you can collect your items..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1590396788684",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1590401098530"
+      },
+      "conditions": "@meat:prawns || @meat:fish || @meat:meet || @meat:beef || @meat:poultry",
+      "dialog_node": "node_8_1590406377735",
+      "previous_sibling": "node_5_1590400063407"
+    },
+    {
+      "type": "standard",
+      "title": "dairy",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "you can collect your items..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1590396788684",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1590401098530"
+      },
+      "conditions": "@dairy:butter || @dairy:ghee",
+      "dialog_node": "node_5_1590400063407",
+      "previous_sibling": "node_9_1590397637260"
+    },
+    {
+      "type": "standard",
+      "title": "beverages",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "you can collect your items......"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1590396788684",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1590401098530"
+      },
+      "conditions": "@beverages:(coffee/tea) || @beverages:soda || @beverages:juices || @beverages:drinks || @beverages",
+      "dialog_node": "node_3_1590397547858",
+      "previous_sibling": "node_10_1590397462402"
+    },
+    {
+      "type": "standard",
+      "title": "bakery",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "you can collect your items...      anythingelse"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "anythingelse"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1590396788684",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_6_1590401098530"
+      },
+      "conditions": "@bakery:bread || @bakery:biscuits || @bakery:chochalates || @bakery:sandwiches || @bakery:(dinner rolls)",
+      "dialog_node": "node_10_1590397462402"
+    },
+    {
+      "type": "standard",
+      "title": "payment done",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "collect your receipt and complete your bill payment on online"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "thank for visiting our market....have a great day...."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#payment",
+      "dialog_node": "node_6_1590401098530",
+      "previous_sibling": "node_2_1590396788684"
+    },
+    {
+      "type": "standard",
+      "title": "ordergroceries",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "what type of groceries you want to order??"
+              },
+              {
+                "text": "what you need ??"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#groceries",
+      "dialog_node": "node_2_1590396788684",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome to grocery bot",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello welcome to srinithi supermarket. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "My first skill",
+  "language": "en",
+  "description": ""
+}
